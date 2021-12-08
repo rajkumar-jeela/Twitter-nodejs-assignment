@@ -1,0 +1,62 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "user_1",
+  "password": "richard_567",
+  "name": "Adam  Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "user_1",
+  "password": "richard_567"
+}
+
+###
+GET  http://localhost:3000/user/following/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+###
+
+GET  http://localhost:3000/user/followers/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+
+###
+GET  http://localhost:3000/user/tweets/feed/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+
+###
+GET  http://localhost:3000/user/tweets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+
+
+###
+GET  http://localhost:3000/tweets/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+###
+POST   http://localhost:3000/user/tweets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+
+{
+   "tweet": "The Mornings..."
+}
+
+
+###
+DELETE  http://localhost:3000/tweets/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTIwMzcyfQ.pr9URuJVFGi59jpJzMS89Bpg900igx7kMxWK4iFp_EU
+
+###
+POST http://localhost:3000/verify/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiaWF0IjoxNjM4MTE5ODQxfQ.IJ55bWRMjbEH8OReQ-nA7ukfZWTs5kbdYi-RhHGdzWA
